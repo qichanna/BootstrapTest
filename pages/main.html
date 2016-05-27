@@ -375,9 +375,8 @@
             if ('#' !== href) {
                 e.preventDefault();
                 $(document).scrollTop($(href).offset().top - 70);
-                alert(tabId);
                 if (tabId) {
-                    $('#feature-tab a[href=#' + tabId + ']').tab('show');
+                    $('#feature-tab a[href="#' + tabId + '"]').tab('show');
                 }
             }
         });
